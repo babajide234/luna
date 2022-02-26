@@ -1,7 +1,7 @@
 import React from 'react'
 import { Psection,Pcontent } from './ParallaxElement';
-import { useParallax } from 'react-scroll-parallax';
-import { ParallaxBanner } from 'react-scroll-parallax';
+// import { useParallax } from 'react-scroll-parallax';
+// import { ParallaxBanner } from 'react-scroll-parallax';
 import { Container, Row,Col } from './../styles/index';
 import { Paragraph4, Title4 } from './../Typography/index';
 const ParallaxComponent = () => {

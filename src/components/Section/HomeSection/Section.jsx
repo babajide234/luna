@@ -2,7 +2,7 @@ import React from 'react'
 import { SectionContainer,SectionIcon } from './SectionElements'
 import { Col, Container, Row, Col3, Col2 } from './../../styles/index';
 import PicFrame from './../../PicFrame/PicFrame';
-import { Titlehead, Paragraph4, Title0, Title1, Paragraph3 } from './../../Typography/index';
+import { Titlehead, Paragraph4, Title1, Paragraph3 } from './../../Typography/index';
 import ParallaxComponent from './../../Parallax/ParallaxComponent';
 
 const Section = () => {
