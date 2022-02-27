@@ -16,3 +16,15 @@ export const SectionIcon =styled.img`
     height:${({height})=>height};
     z-index:-1;
 `
+
+export const ContainerLeft = styled.div`
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    .div{
+        width:320px;
+    }
+`
+export const ContainerRight = styled.div`
+
+`

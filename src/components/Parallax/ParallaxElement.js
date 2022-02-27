@@ -4,9 +4,13 @@ export const Psection =styled.div`
     width:100%;
     position : relative;
     padding:100px 0px;
-    .parallax{
-        height:100vh;
-    }
+    background:url(${({url})=>url});
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:70vh;
+    margin-bottom:0px;
 `
 export const Pcontent =styled.div`
     width:100%;

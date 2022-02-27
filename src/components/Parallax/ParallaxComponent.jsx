@@ -4,6 +4,7 @@ import { Psection,Pcontent } from './ParallaxElement';
 // import { ParallaxBanner } from 'react-scroll-parallax';
 import { Container, Row,Col } from './../styles/index';
 import { Paragraph4, Title4 } from './../Typography/index';
+
 const ParallaxComponent = () => {
 //   const { ref } = useParallax({ speed: 10 });
 
