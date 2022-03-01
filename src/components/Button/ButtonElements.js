@@ -1,7 +1,5 @@
 import styled from "styled-components";
-const  btnborder = props => {
-    return props.theme.colors.button.links
-};
+
 
 export const ButtonElement = styled.div`
     color:${props=>props.theme.colors.button.links};

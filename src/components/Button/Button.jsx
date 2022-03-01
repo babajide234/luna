@@ -13,32 +13,27 @@ const Button = (props) => {
           duration: 0.4,
         }
       };
-      const arrowMotion = {
-        rest: { 
-            x:0
-        },
-        hover: {
-            x:-100,
-            transition:{
-                delay:.4,
+      // const arrowMotion = {
+      //   rest: { 
+      //       x:0
+      //   },
+      //   hover: {
+      //       x:-100,
+      //       transition:{
+      //           delay:.4,
                 
-            }
-        }
-      };
+      //       }
+      //   }
+      // };
   return (
       <>
       {
-          props.border?(
+          props.border ? (
             <motion.div variants={buttonMotion} initial="rest" whileHover="hover">
             <ButtonElement 
                 as={motion.button}
             >
                 {props.children}
-                {/* <Arrow 
-                    as={motion.img}
-                    src={'./assets/icons.png'} 
-                    variants={arrowMotion}
-                /> */}
             </ButtonElement>
             </motion.div>
           ):(
