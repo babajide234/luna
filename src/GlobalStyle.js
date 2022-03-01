@@ -10,11 +10,30 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         font-family: 'Poppins', sans-serif;
+        overflow-x:hidden;
     }
 
     ul{
         list-style:none;
     }
 
+    body::-webkit-scrollbar {
+        width: .5rem;
+    }
+       
+    body::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+     
+    body::-webkit-scrollbar-thumb {
+      background-color: rgba( 0,0,0 , 0.2);
+      outline: 1px solid ${props=>props.theme.colors.page.accent};
+      border-radius:4px;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+      background-color: ${props=>props.theme.colors.page.accent_2};
+      outline: 1px solid ${props=>props.theme.colors.page.accent};
+      border-radius:4px;
+    }
     
 `

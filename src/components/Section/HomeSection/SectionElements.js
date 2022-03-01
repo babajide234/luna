@@ -22,7 +22,7 @@ export const ContainerLeft = styled.div`
     justify-content:space-between;
     width:100%;
     .div{
-        width:320px;
+        width:300px;
     }
 `
 export const ContainerRight = styled.div`

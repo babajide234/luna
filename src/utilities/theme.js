@@ -8,7 +8,7 @@ export const theme = {
             accent_2:'#838383',
         },
         button:{
-            links:'#08329C',
+            links:'#9F5F2E',
             links_lighter:'#08329C'
         }
     },
