@@ -31,4 +31,20 @@ export const HeaderRight = styled.div`
 export const HeaderBackgroundImage = styled.img`
     
 `
+export const HeaderBackground = styled.div`
+    width:100%;
+    min-height:70vh;
+    position:relative;
+    background: linear-gradient(rgba(17, 17, 17, 0.64),rgba(17, 17, 17, 0.64)), url(${({url})=> url });
+    background-position: center;
+    background-size: cover;
+    padding-top:150px;
+    color:${ props => props.bg ? props.theme.colors.page.neutral+' !important' : props.theme.colors.page.accent_2 +" !important" };
+
+    &::after{}
+
+
+`
+
+
 

@@ -28,3 +28,11 @@ export const ContainerLeft = styled.div`
 export const ContainerRight = styled.div`
 
 `
+export const Cube = styled.div`
+    width:calc((100%/5) - 20px);
+    border:1px solid #eee;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+`

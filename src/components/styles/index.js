@@ -19,6 +19,12 @@ export const Col3 =styled.div`
     display:flex;
     align-items:start;
 `
+export const Col4 =styled.div`
+    width:calc((100%/4) - 20px);
+    display:flex;
+    flex-flow:column;
+    align-items:start;
+`
 export const Row = styled.div`
     width:100%;
     display:flex;

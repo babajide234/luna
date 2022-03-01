@@ -22,6 +22,13 @@ import styled from "styled-components";
         font-size: ${props => (props.theme.fonts.size.t1)};
         line-height: ${props => (props.theme.fonts.lineHeight.l1)};    
     `
+    export const Title2 = styled.h1`
+        font-family: ${props => (props.theme.fonts.family.font_1)};
+        font-style: normal;
+        font-weight: ${props => (props.theme.fonts.weight.w2)};
+        font-size: ${props => (props.theme.fonts.size.t2)};
+        line-height: ${props => (props.theme.fonts.lineHeight.l2)};    
+    `
     export const Title3 = styled.h1`
         font-family: ${props => (props.theme.fonts.family.font_1)};
         font-style: normal;

@@ -9,8 +9,7 @@ import {
 import { Container,Row } from '../styles';
 import { Paragraph4 } from '../Typography';
 import { motion } from 'framer-motion';
-
-const Navbar = () => {
+const Navbar = (props) => {
 
     const menuAnimation = {
         out:{
@@ -59,7 +58,7 @@ const Navbar = () => {
     }
   return (
       <>
-        <NavbarCointainer>
+        <NavbarCointainer bg={props.bg}>
             <Container>
                 <Row>
                     <NavLogo 
@@ -75,10 +74,10 @@ const Navbar = () => {
                         animate="in"
                         variants={menuAnimation}
                     >
-                        <NavItem as={motion.li} variants={listAnimation}><Navlink as={motion.a}> <Paragraph4 as={motion.p} whileHover={{scale:1.2,cursor:'pointer',color:'#9F5F2E'}} transition={{type:'spring',stiffness:150}} >Experiences</Paragraph4> </Navlink></NavItem>
-                        <NavItem as={motion.li} variants={listAnimation}><Navlink as={motion.a}> <Paragraph4 as={motion.p} whileHover={{scale:1.2,cursor:'pointer',color:'#9F5F2E'}} transition={{type:'spring',stiffness:150}} >Rentals</Paragraph4></Navlink></NavItem>
-                        <NavItem as={motion.li} variants={listAnimation}><Navlink as={motion.a}> <Paragraph4 as={motion.p} whileHover={{scale:1.2,cursor:'pointer',color:'#9F5F2E'}} transition={{type:'spring',stiffness:150}} >Tours</Paragraph4></Navlink></NavItem>
-                        <NavItem as={motion.li} variants={listAnimation}><Navlink as={motion.a}> <Paragraph4 as={motion.p} whileHover={{scale:1.2,cursor:'pointer',color:'#9F5F2E'}} transition={{type:'spring',stiffness:150}} >Contact Us</Paragraph4></Navlink></NavItem>
+                        <NavItem as={motion.li} bg={props.bg} variants={listAnimation}><Navlink to ='/experience'  bg={props.bg} > <Paragraph4 as={motion.p} whileHover={{scale:1.2,cursor:'pointer',color:'#9F5F2E'}} transition={{type:'spring',stiffness:150}} >Experiences</Paragraph4> </Navlink></NavItem>
+                        <NavItem as={motion.li} bg={props.bg} variants={listAnimation}><Navlink to ='/rentals'  bg={props.bg} > <Paragraph4 as={motion.p} whileHover={{scale:1.2,cursor:'pointer',color:'#9F5F2E'}} transition={{type:'spring',stiffness:150}} >Rentals</Paragraph4></Navlink></NavItem>
+                        <NavItem as={motion.li} bg={props.bg} variants={listAnimation}><Navlink to ='/tours'  bg={props.bg} > <Paragraph4 as={motion.p} whileHover={{scale:1.2,cursor:'pointer',color:'#9F5F2E'}} transition={{type:'spring',stiffness:150}} >Tours</Paragraph4></Navlink></NavItem>
+                        <NavItem as={motion.li} bg={props.bg} variants={listAnimation}><Navlink to ='/contact' bg={props.bg} > <Paragraph4 as={motion.p} whileHover={{scale:1.2,cursor:'pointer',color:'#9F5F2E'}} transition={{type:'spring',stiffness:150}} >Contact Us</Paragraph4></Navlink></NavItem>
                     </NavMenu>
                 </Row>
             </Container>

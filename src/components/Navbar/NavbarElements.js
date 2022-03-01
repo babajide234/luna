@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { Link } from "react-router-dom"
 export const NavbarCointainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -9,7 +9,7 @@ export const NavbarCointainer = styled.div`
     top:0;
     width: 100%;
     padding:30px 0px;
-    background:${props=> props.theme.colors.page.neutral};
+    background: ${props=> props.bg ?  'transparent' : props.theme.colors.page.neutral};
     z-index:10000;
 `
 export const NavLogo = styled.img`
@@ -27,7 +27,11 @@ export const NavItem = styled.li`
         margin-right:0px;
     }
 `
-export const Navlink = styled.a`
-    color:${ props => props.theme.colors.page.accent_2}
-    
+export const Navlink = styled(Link)`
+
+    color:${ props => props.bg ? props.theme.colors.page.neutral+' !important' : props.theme.colors.page.accent_2 +" !important" };
+    text-decoration:none;
+    p{
+        color:${ props => props.bg ? props.theme.colors.page.neutral+' !important' : props.theme.colors.page.accent_2 +" !important" };
+    }
 `
